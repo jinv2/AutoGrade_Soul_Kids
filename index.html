@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <title>Shensist 魔法创意：云端工坊</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Ma+Shan+Zheng&family=Zhi+Mang+Xing&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div class="sky-background">
+        <div class="cloud cloud-1"></div>
+        <div class="cloud cloud-2"></div>
+        <div class="cloud cloud-3"></div>
+    </div>
+
+    <div id="magic-workshop-app">
+        <header>
+            <div class="brand-logo">
+                <a href="https://shensist.top/" target="_blank">
+                    <img src="assets/logo_ts.webp" alt="Shensist Logo" class="main-logo">
+                </a>
+            </div>
+            <div class="logo-area">
+                <h1 class="kids-title">Shensist 魔法全学科工坊</h1>
+            </div>
+            <div class="sub-policy-banner">
+                <span class="badge">跨学科自动感知</span>
+                <span class="badge">全维度创意评估</span>
+                <span class="badge">2026 考核指定架构</span>
+            </div>
+        </header>
+
+        <main>
+            <section class="input-island">
+                <div class="input-card" id="answer-origin">
+                    <div class="card-icon">🎯</div>
+                    <h3>教学灵魂参考</h3>
+                    <textarea id="ref-answer" placeholder="放入参考逻辑..."></textarea>
+                </div>
+
+                <div class="input-card" id="batch-control">
+                    <div class="card-icon">📊</div>
+                    <h3>批量思维注入</h3>
+                    <p class="hint">姓名-答案 (每行一个)</p>
+                    <textarea id="batch-stu-answer" placeholder="张三-春天像画家..."></textarea>
+                </div>
+            </section>
+
+            <section class="creative-galaxy">
+                <div id="batch-results-container" class="grid-layout">
+                    <div id="thinking-cloud">等待扫描班级思维频率...</div>
+                </div>
+            </section>
+        </main>
+
+        <footer>
+            <button id="ignite-magic-btn">✨ 启动灵魂扫描 ✨</button>
+            
+            <div class="shensist-copyright">
+                <p>© 2024-2026 <a href="https://shensist.top/" target="_blank">Shensist.top</a> | Shensist-Agent 架构师版</p>
+                <p class="icp-info">让每一个灵魂的火花都被看见</p>
+            </div>
+        </footer>
+    </div>
+    <script src="app.js"></script>
+</body>
+</html>

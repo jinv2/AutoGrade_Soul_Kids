@@ -1,0 +1,201 @@
+/* Shensist Matrix: 魔法童话 V3.0 终极版 */
+:root {
+    --magic-pink: #ff6090;
+    --magic-purple: #9c27b0;
+    --sky-blue: #e3f2fd;
+    --cloud-white: rgba(255, 255, 255, 0.95);
+}
+
+body {
+    background: linear-gradient(135deg, #fdfbfb 0%, #ebedee 100%);
+    display: flex; justify-content: center; align-items: center;
+    min-height: 100vh; margin: 0;
+    font-family: 'PingFang SC', 'Microsoft YaHei', sans-serif;
+}
+
+#magic-workshop-app {
+    width: 950px; background: var(--cloud-white);
+    border-radius: 60px; box-shadow: 0 30px 60px rgba(0,0,0,0.1);
+    padding: 40px; border: 10px solid #fff;
+    position: relative; overflow: hidden;
+}
+
+/* --- LOGO 模块完美化：彻底去圆圈 --- */
+.brand-logo {
+    display: block; margin: 0 auto 10px;
+    background: none !important; /* 强制去除圆圈背景 */
+    border: none !important;
+    text-align: center;
+}
+
+.main-logo {
+    height: 100px; width: auto;
+    filter: drop-shadow(0 0 10px rgba(106, 17, 203, 0.2));
+    transition: transform 0.5s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+}
+
+.main-logo:hover {
+    transform: scale(1.15) rotate(-5deg);
+    filter: drop-shadow(0 0 20px rgba(255, 96, 144, 0.5));
+}
+
+/* --- 标题模块 --- */
+header {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.kids-title {
+    font-size: 3.5em; font-family: 'Zhi Mang Xing', cursive;
+    background: linear-gradient(45deg, var(--magic-pink), var(--magic-purple));
+    -webkit-background-clip: text;
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
+    margin: 10px 0;
+}
+
+.sub-policy-banner {
+    display: flex;
+    justify-content: center;
+    gap: 15px;
+}
+
+.sub-policy-banner .badge {
+    background: #f3e5f5; color: var(--magic-purple);
+    border: 1px solid var(--magic-purple); border-radius: 50px;
+    padding: 5px 15px; font-size: 0.85em; font-weight: bold;
+}
+
+/* --- 输入区域 --- */
+.input-island { display: flex; gap: 20px; margin: 30px 0; }
+.input-card { 
+    flex: 1; background: #fff; padding: 20px; 
+    border-radius: 30px; box-shadow: 0 10px 20px rgba(0,0,0,0.05);
+    border: 2px solid #f1f1f1;
+    text-align: left;
+}
+
+.input-card h3 {
+    margin-top: 0;
+    color: #546e7a;
+    font-family: 'Ma Shan Zheng', cursive;
+}
+
+textarea {
+    width: 100%; border: none; background: #fafafa;
+    border-radius: 15px; padding: 15px; font-size: 1.1em;
+    resize: none; box-sizing: border-box; height: 120px;
+    font-family: inherit;
+}
+
+textarea:focus {
+    outline: 2px solid var(--magic-pink);
+    background: #fff;
+}
+
+/* --- 结果区域：批量卡片星云化 --- */
+.creative-galaxy {
+    background: linear-gradient(to bottom, #1a237e, #311b92);
+    border-radius: 40px; padding: 30px; min-height: 300px;
+    margin-bottom: 30px;
+}
+
+.grid-layout {
+    display: grid; grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
+    gap: 20px;
+}
+
+.mini-soul-card {
+    background: rgba(255, 255, 255, 0.1);
+    backdrop-filter: blur(5px); border: 1px solid rgba(255, 255, 255, 0.2);
+    border-radius: 25px; padding: 20px; color: #fff;
+    animation: fadeIn 0.5s ease-out forwards;
+    text-align: left;
+}
+
+@keyframes fadeIn {
+    from { opacity: 0; transform: translateY(20px); }
+    to { opacity: 1; transform: translateY(0); }
+}
+
+.mini-soul-card h4 { color: #ffd600; font-size: 1.6em; margin: 0 0 10px 0; font-family: 'Ma Shan Zheng'; }
+.field-tag { font-size: 0.5em; background: #9c27b0; color: white; padding: 2px 8px; border-radius: 10px; margin-left: 10px; vertical-align: middle; font-family: sans-serif; }
+
+.stu-text {
+    font-size: 1em; color: #e0f2f1; margin-bottom: 15px;
+    border-left: 3px solid #ffd600; padding-left: 10px;
+    font-style: italic;
+}
+
+.mini-tags .tiny-tag {
+    background: #ff4081; color: white; padding: 3px 12px;
+    border-radius: 50px; font-size: 0.75em; margin-right: 8px;
+    display: inline-block; font-weight: bold;
+}
+
+.soul-dialogue {
+    font-size: 0.95em; color: #fff; line-height: 1.6;
+    margin-top: 15px; text-shadow: 0 2px 4px rgba(0,0,0,0.3);
+}
+
+.soul-dimensions {
+    margin-top: 15px; font-size: 0.75em; color: rgba(255, 255, 255, 0.6);
+    border-top: 1px solid rgba(255, 255, 255, 0.1);
+    padding-top: 10px;
+}
+
+/* --- 启动按钮 --- */
+footer {
+    text-align: center;
+    padding-top: 20px;
+}
+
+#ignite-magic-btn {
+    background: linear-gradient(to right, #ff416c, #ff4b2b);
+    color: white; border: none; padding: 20px 80px;
+    font-size: 2em; border-radius: 100px; cursor: pointer;
+    font-family: 'Zhi Mang Xing'; box-shadow: 0 15px 35px rgba(255, 65, 108, 0.4);
+    transition: 0.3s;
+}
+
+#ignite-magic-btn:hover {
+    transform: translateY(-5px) scale(1.05);
+    box-shadow: 0 20px 45px rgba(255, 65, 108, 0.6);
+}
+
+.shensist-copyright {
+    margin-top: 25px; font-size: 0.85em; color: #90a4ae;
+}
+
+.shensist-copyright a {
+    color: var(--magic-purple); text-decoration: none; font-weight: bold;
+}
+
+.shensist-copyright a:hover { text-decoration: underline; }
+
+.icp-info { font-size: 0.8em; margin-top: 5px; letter-spacing: 2px; }
+
+#thinking-cloud {
+    font-size: 1.8em; color: #ffd600; font-family: 'Zhi Mang Xing';
+    text-align: center; margin-top: 100px;
+}
+
+/* --- 手机端自适应补丁 --- */
+@media (max-width: 768px) {
+    body { overflow-y: auto; align-items: flex-start; padding: 20px 0; }
+    
+    #magic-workshop-app {
+        width: 100%; min-height: 100vh; border-radius: 0;
+        border: none; padding: 20px;
+    }
+
+    .kids-title { font-size: 2.2em; }
+    
+    .input-island { flex-direction: column; }
+    
+    .grid-layout { grid-template-columns: 1fr; }
+    
+    #ignite-magic-btn { padding: 15px 40px; font-size: 1.5em; width: 100%; }
+    
+    .main-logo { height: 70px; }
+}
