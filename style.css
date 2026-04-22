@@ -30,7 +30,7 @@ body {
 }
 
 .main-logo {
-    height: 60px; width: auto; /* 缩小 LOGO */
+    height: 40px; width: auto; /* 进一步缩小 LOGO */
     filter: drop-shadow(0 0 10px rgba(106, 17, 203, 0.2));
     transition: transform 0.5s cubic-bezier(0.175, 0.885, 0.32, 1.275);
 }
@@ -198,5 +198,5 @@ footer {
     
     #ignite-magic-btn { padding: 15px 40px; font-size: 1.5em; width: 100%; }
     
-    .main-logo { height: 70px; }
+    .main-logo { height: 35px; }
 }

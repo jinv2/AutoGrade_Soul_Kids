@@ -1,6 +1,6 @@
 # Shensist 魔法全学科工坊 (Soul Kids Workshop)
 
-![Shensist Branding](assets/logo_ts.webp)
+<img src="assets/logo_ts.webp" alt="Shensist Branding" width="150">
 
 > **2026 AI 教师资格证考核指定架构 | 跨学科自动感知 | 全维度创意评估**
 
