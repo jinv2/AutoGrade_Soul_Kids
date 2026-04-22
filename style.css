@@ -18,6 +18,7 @@ body {
     border-radius: 60px; box-shadow: 0 30px 60px rgba(0,0,0,0.1);
     padding: 40px; border: 10px solid #fff;
     position: relative; overflow: hidden;
+    user-select: none; /* 开启版权保护：禁止文本选中 */
 }
 
 /* --- LOGO 模块完美化：彻底去圆圈 --- */
@@ -29,7 +30,7 @@ body {
 }
 
 .main-logo {
-    height: 100px; width: auto;
+    height: 60px; width: auto; /* 缩小 LOGO */
     filter: drop-shadow(0 0 10px rgba(106, 17, 203, 0.2));
     transition: transform 0.5s cubic-bezier(0.175, 0.885, 0.32, 1.275);
 }

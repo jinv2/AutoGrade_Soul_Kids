@@ -32,5 +32,10 @@ The Shensist Soul Kids Workshop is an intelligent, multi-disciplinary, batch-pro
 └── README.md       # 项目说明
 ```
 
-## 📜 版权信息 (License)
-© 2024-2026 [Shensist.top](https://shensist.top/) | 让每一个灵魂的火花都被看见。
+## 📜 版权严正声明 (Strict License)
+**版权所有 © 2024-2026 Shensist.top。保留所有权利。**
+本项目为 Shensist.top 专有资产及 2026 AI 教师资格证备考机密架构。严禁任何形式的复制、分发或未经授权的商业用途。详见 [LICENSE](LICENSE) 文件。
+
+**Copyright © 2024-2026 Shensist.top. All Rights Reserved.**
+This project is the proprietary asset of Shensist.top. Unauthorized copying, distribution, or commercial use is strictly prohibited. See [LICENSE](LICENSE) for details.
+

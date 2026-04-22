@@ -7,6 +7,9 @@ document.addEventListener('DOMContentLoaded', () => {
             processBatchMagic();
         };
     }
+
+    // 严禁右键点击：版权保护 V3.0
+    document.addEventListener('contextmenu', e => e.preventDefault());
 });
 
 // Shensist 架构师：多学科逻辑矩阵
